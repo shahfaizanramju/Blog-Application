@@ -2,51 +2,51 @@ package com.blog.dtos;
 
 public class UserDTO {
 
-    private Long user_id;
+    private Long userId;
 
-    private String user_name;
-    private String user_email;
-    private String user_password;
-    private String user_about;
+    private String userName;
+    private String userEmail;
+    private String userPassword;
+    private String userAbout;
 
-    public Long getUser_id() {
-        return user_id;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setUser_id(Long user_id) {
-        this.user_id = user_id;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
-    public String getUser_name() {
-        return user_name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getUser_email() {
-        return user_email;
+    public String getUserEmail() {
+        return userEmail;
     }
 
-    public void setUser_email(String user_email) {
-        this.user_email = user_email;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
-    public String getUser_password() {
-        return user_password;
+    public String getUserAbout() {
+        return userAbout;
     }
 
-    public void setUser_password(String user_password) {
-        this.user_password = user_password;
+    public void setUserAbout(String userAbout) {
+        this.userAbout = userAbout;
     }
 
-    public String getUser_about() {
-        return user_about;
+    public String getUserPassword() {
+        return userPassword;
     }
 
-    public void setUser_about(String user_about) {
-        this.user_about = user_about;
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
 
 }

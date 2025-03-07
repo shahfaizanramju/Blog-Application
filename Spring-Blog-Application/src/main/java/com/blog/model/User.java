@@ -1,5 +1,6 @@
 package com.blog.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,51 +13,59 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long user_id;
+    @Column(name = "user_id")
+    private Long userId;
 
-    private String user_name;
-    private String user_email;
-    private String user_password;
-    private String user_about;
+    @Column(name = "user_name")
+    private String userName;
 
-    public Long getUser_id() {
-        return user_id;
+    @Column(name = "user_email")
+    private String userEmail;
+
+    @Column(name = "user_password")
+    private String userPassword;
+
+    @Column(name = "user_about")
+    private String userAbout;
+
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setUser_id(Long user_id) {
-        this.user_id = user_id;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
-    public String getUser_name() {
-        return user_name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getUser_email() {
-        return user_email;
+    public String getUserEmail() {
+        return userEmail;
     }
 
-    public void setUser_email(String user_email) {
-        this.user_email = user_email;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
-    public String getUser_password() {
-        return user_password;
+    public String getUserPassword() {
+        return userPassword;
     }
 
-    public void setUser_password(String user_password) {
-        this.user_password = user_password;
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
 
-    public String getUser_about() {
-        return user_about;
+    public String getUserAbout() {
+        return userAbout;
     }
 
-    public void setUser_about(String user_about) {
-        this.user_about = user_about;
+    public void setUserAbout(String userAbout) {
+        this.userAbout = userAbout;
     }
 
 }

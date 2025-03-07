@@ -1,15 +1,18 @@
 package com.blog.utility;
 
-import java.util.Optional;
-
+import java.util.ArrayList;
 import org.springframework.http.HttpStatus;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
 public class ApiResponse {
 
     private HttpStatus status;
     private int status_code;
     private String message;
-    private Optional<?> data;
+    private ArrayList<?> data;
 
     public HttpStatus getStatus() {
         return status;
@@ -35,11 +38,11 @@ public class ApiResponse {
         this.message = message;
     }
 
-    public Optional<?> getData() {
+    public ArrayList<?> getData() {
         return data;
     }
 
-    public void setData(Optional<?> data) {
+    public void setData(ArrayList<?> data) {
         this.data = data;
     }
 
